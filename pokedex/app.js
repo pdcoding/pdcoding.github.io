@@ -4,19 +4,19 @@ $(() => {
   const handleData = data => {
     // console.log(data.game_indices[0].game_index);
 
-    //NAME
-    const $name = $('<h2>').text('Name: ' + data.name);
-    $('.results').append($name);
-    $name.addClass('pokemonName');
-
     //Poké#
     const $pokeNum = $('<h2>').text('Pokémon #' + data.id);
     $('.results').append($pokeNum);
     $pokeNum.addClass('pokeNum');
 
+    //NAME
+    const $name = $('<h2>').text(data.name);
+    $('.results').append($name);
+    $name.addClass('pokemonName');
+
     //TYPE
     const $type = $('<h2>').text(
-      'Type: ' + data.types[0].type.name
+      data.types[0].type.name + ' type'
     ); /* + ' / ' + data.types[1].type.name
     );*/
     $('.results').append($type);

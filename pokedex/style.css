@@ -6,3 +6,11 @@ header {
   background-color: thistle;
   color: #168bf2;
 }
+
+.pokemonName::first-letter {
+  text-transform: uppercase;
+}
+
+.pokemonType::first-letter {
+  text-transform: uppercase;
+}
