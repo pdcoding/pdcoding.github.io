@@ -1,57 +1,59 @@
 console.log("Gotta catch 'em all!");
 
-$('form').on('submit', event => {
-  //   event.preventDefault();
+$(() => {
+  const handleData = data => {
+    // console.log(data.game_indices[0].game_index);
 
-  const pokemonSearch = $('.pokemonSearch').val();
-  const endpoint = `https://pokeapi.co/api/v2/pokemon/${pokemonSearch}/`;
+    //NAME
+    const $name = $('<h2>').text('Name: ' + data.name);
+    $('.container').append($name);
+    $name.addClass('pokemonName');
 
-  const textField = $(() => {
-    const handleData = data => {
-      // console.log(data.game_indices[0].game_index);
+    //Poké#
+    const $pokeNum = $('<h2>').text(
+      'Pokémon #' + data.game_indices[0].game_index
+    );
+    $('.container').append($pokeNum);
+    $pokeNum.addClass('pokeNum');
 
-      //NAME
-      const $name = $('<h2>').text('Name: ' + data.name);
-      $('.container').append($name);
-      $name.addClass('pokemonName');
+    //TYPE
+    const $type = $('<h2>').text(
+      'Type: ' + data.types[0].type.name
+    ); /*+
+      ' / ' +
+      types[1].type.name*/
+    $('.container').append($type);
+    $type.addClass('pokemonType');
 
-      //Poké#
-      const $pokeNum = $('<h2>').text(
-        'Pokémon #' + data.game_indices[0].game_index
-      );
-      $('.container').append($pokeNum);
-      $pokeNum.addClass('pokeNum');
+    //Weight
+    const $weight = $('<h2>').text('Weight: ' + data.weight + ' hectograms');
+    $('.container').append($weight);
+    $type.addClass('weight');
 
-      //TYPE
-      const $type =
-        $('<h2>').text('Type: ' + data.types[0].type.name) +
-        ' / ' +
-        types[1].type.name;
-      $('.container').append($type);
-      $type.addClass('pokemonType');
+    //Height
+    const $height = $('<h2>').text('Height: ' + data.height + ' decimeters');
+    $('.container').append($height);
+    $height.addClass('height');
 
-      //Weight
-      const $weight = $('<h2>').text('Weight: ' + data.weight + ' hectograms');
-      $('.container').append($weight);
-      $type.addClass('weight');
+    //Sprite
+    const $sprite = $('<img>');
+    $sprite.attr('src', data.sprites.front_default);
+    $('.container').append($sprite);
+    $sprite.addClass('sprite');
+    $sprite.attr('id', 'sprite');
+  };
 
-      //Height
-      const $height = $('<h2>').text('Height: ' + data.height + ' decimeters');
-      $('.container').append($height);
-      $height.addClass('height');
+  $('form').on('submit', event => {
+    event.preventDefault();
+    console.log('test submit');
 
-      //Sprite
-      const $sprite = $('<img>');
-      $sprite.attr('src', data.sprites.front_default);
-      $('.container').append($sprite);
-      $sprite.addClass('sprite');
-      $sprite.attr('id', 'sprite');
-    };
+    const pokemonSearch = $('.pokemonSearch').val();
+    const endpoint = `https://pokeapi.co/api/v2/pokemon/${pokemonSearch}/`;
+
+    $.ajax({
+      url: endpoint
+    }).then(handleData);
   });
-
-  $.ajax({
-    url: endpoint
-  }).then(handleData);
 });
 
 //name -> name
