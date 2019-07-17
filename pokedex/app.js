@@ -45,7 +45,8 @@ $(() => {
     event.preventDefault();
 
     const pokemonSearch = $('.pokemonSearch').val();
-    const endpoint = `https://pokeapi.co/api/v2/pokemon/${pokemonSearch}/`;
+    const actualSearch = pokemonSearch.toLowerCase();
+    const endpoint = `https://pokeapi.co/api/v2/pokemon/${actualSearch}/`;
 
     $.ajax({
       url: endpoint
