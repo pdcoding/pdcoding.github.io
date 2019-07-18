@@ -52,6 +52,27 @@ $(() => {
       url: endpoint
     }).then(handleData);
   });
+
+  const modal = $('myModal')
+  const btn = $('myBtn')
+  const span = $('close')[0]
+
+  btn.on('click', event) = () => {
+      modal.style.display = 'block'
+  }
+
+  span.on('click', event) = () => {
+      modal.style.display = 'none'
+  }
+
+  window.on('click', event) = (event) => {
+      if (event.target == modal) {
+          modal.style.display = 'none';
+      }
+  }
+
+
+
 });
 
 //name -> name
