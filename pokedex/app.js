@@ -53,21 +53,39 @@ $(() => {
     }).then(handleData);
   });
 
-  const modal = $('#myModal');
-  const btn = $('#myBtn');
-  const span = $('.close');
+  const historyModal = $('#historyModal');
+  const historyBtn = $('#historyBtn');
+  const historySpan = $('.historyClose');
 
-  btn.on('click', event => {
-    modal.css('display', 'block');
+  historyBtn.on('click', event => {
+    historyModal.css('display', 'block');
   });
 
-  span.on('click', event => {
-    modal.css('display', 'none');
+  historySpan.on('click', event => {
+    historyModal.css('display', 'none');
   });
 
   $('window').on('click', event => {
     if (event.target == modal) {
-      modal.css('display', 'none');
+      historyModal.css('display', 'none');
+    }
+  });
+
+  const gamesModal = $('#gamesModal');
+  const gamesBtn = $('#gamesBtn');
+  const gamesSpan = $('.gameClose');
+
+  gamesBtn.on('click', event => {
+    gamesModal.css('display', 'block');
+  });
+
+  gamesSpan.on('click', event => {
+    gamesModal.css('display', 'none');
+  });
+
+  $('window').on('click', event => {
+    if (event.target == modal) {
+      gamesModal.css('display', 'none');
     }
   });
 });
