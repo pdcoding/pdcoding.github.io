@@ -18,3 +18,18 @@ header {
 .pokemonType::first-letter {
   text-transform: uppercase;
 }
+
+.navBar {
+  float: left;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+/* 
+form {
+  float: right;
+}
+
+.result {
+  float: right;
+} */
