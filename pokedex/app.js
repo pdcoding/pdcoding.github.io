@@ -73,7 +73,7 @@ $(() => {
 
   const gamesModal = $('#gamesModal');
   const gamesBtn = $('#gamesBtn');
-  const gamesSpan = $('.gameClose');
+  const gamesSpan = $('.gamesClose');
 
   gamesBtn.on('click', event => {
     gamesModal.css('display', 'block');
