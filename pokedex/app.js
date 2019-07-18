@@ -53,26 +53,23 @@ $(() => {
     }).then(handleData);
   });
 
-  const modal = $('myModal')
-  const btn = $('myBtn')
-  const span = $('close')[0]
+  const modal = $('#myModal');
+  const btn = $('#myBtn');
+  const span = $('.close');
 
-  btn.on('click', event) = () => {
-      modal.style.display = 'block'
-  }
+  btn.on('click', event => {
+    modal.css('display', 'block');
+  });
 
-  span.on('click', event) = () => {
-      modal.style.display = 'none'
-  }
+  span.on('click', event => {
+    modal.css('display', 'none');
+  });
 
-  window.on('click', event) = (event) => {
-      if (event.target == modal) {
-          modal.style.display = 'none';
-      }
-  }
-
-
-
+  $('window').on('click', event => {
+    if (event.target == modal) {
+      modal.css('display', 'none');
+    }
+  });
 });
 
 //name -> name
