@@ -16,7 +16,7 @@ $(() => {
 
     //TYPE
     const $type = $('<h2>').text(
-      data.types[0].type.name + ' type'
+      'Type: ' + data.types[0].type.name
     ); /* + ' / ' + data.types[1].type.name
     );*/
     $('.results').append($type);
