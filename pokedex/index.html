@@ -16,7 +16,8 @@
         <h1>Pokédex</h1>
       </header>
       <!-- <form onsubmit="event.preventDefault();"> -->
-      <form>
+      <div class='formDiv'>
+        <form>
         <input
           type="text"
           id="text-field"
@@ -25,18 +26,14 @@
         />
         <input type="submit" value="Search" />
       </form>
-
+</div>
       <!-- NavBar / Modal Trigger -->
       <div class="modalBar">
-        <button id="historyBtn">History</button>
-        <button id="gamesBtn">Games</button>
-        <button id='regionBtn'>Regions</button>
-        <button id='typesBtn'>Types</button>
-        <button id='genBtn'>Generations</button>
-        <!-- <div class="modal">Types</div>
-        <div class="modal">Games</div>
-        <div class="modal">Regions</div>
-        <div class="modal">Generations</div> -->
+        <button class="modalButton" id="historyBtn">History</button>
+        <button class="modalButton" id="gamesBtn">Games</button>
+        <button class="modalButton" id='regionBtn'>Regions</button>
+        <button class="modalButton" id='typesBtn'>Types</button>
+        <button class="modalButton" id='genBtn'>Generations</button>
       </div>
 
       <!-- History Modal -->
@@ -134,7 +131,8 @@
                         types there are a potential 324 possible combination, but as of now only 146 combinations 
                         have been used. These are the 18 types with examples of each:
                         <ul>
-                            <li class='normal'><strong>Normal: Kangaskhan</li>
+                            <span class='typeList'>
+                            <li class='normal'>Normal: Kangaskhan</li>
                             <li class='fire'>Fire: Magmar</li>
                             <li class='water'>Water: Seadra</li>
                             <li class='grass'>Grass: Tangela</li>
@@ -151,7 +149,8 @@
                             <li class='dragon'>Dragon: Dratini</li>
                             <li class='steel'>Steel*: Klinklang</li>
                             <li class='dark'>Dark*: Mightyena</li>
-                            <li class='fairy'>Fairy: Clefairy</strong></li>
+                            <li class='fairy'>Fairy: Clefairy</li>
+                        </span>
                         </ul>
                         *These are types that had no Pokémon purely of that type until later in the series. <br>
                         ** There is technically another type that is referred to as '???,' although this is frequently
@@ -170,24 +169,24 @@
                         expanded. Here are the Pokémon #'s included in each generation and the starter Pokémon 
                         for each as well:
                         <ul>
-                            <li>Generation 1: #1-151</li>
-                            <sub> <span class='grass'>Bulbasaur</span>, <span class='fire'>Charmander</span>, <span class='water'>Squirtle</span></sub>
-                            <li>Generation 2: #152-251</li>
-                            <sub> <span class='grass'>Chikorita</span>, <span class='fire'>Cyndaquil</span>, <span class='water'>Totodile</span></sub>
-                            <li>Generation 3: #252-386</li>
-                            <sub> <span class='grass'>Treecko</span>, <span class='fire'>Torchic</span>, <span class='water'>Mudkip</span></sub>
-                            <li>Generation 4: #387-493</li>
-                            <sub> <span class='grass'>Turtwig</span>, <span class='fire'>Chimchar</span>, <span class='water'>Piplup</span></sub>
-                            <li>Generation 5: #494-649</li>
-                            <sub> <span class='grass'>Snivy</span>, <span class='fire'>Tepig</span>, <span class='water'>Oshawott</span></sub>
-                            <li>Generation 6: #650-721</li>
-                            <sub> <span class='grass'>Chespin</span>, <span class='fire'>Fennekin</span>, <span class='water'>Froakie</span></sub>
-                            <li>Generation 7: #722-809</li>
-                            <sub> <span class='grass'>Rowlet</span>, <span class='fire'>Litten</span>, <span class='water'>Popplio</span></sub>
-                            <li>Generation 8: #810-?</li>
-                            <sub> <span class='grass'>Grookey</span>, <span class='fire'>Scorbunny</span>, <span class='water'>Sobble</span></sub>
+                            <li class='generationLi'>Generation 1: #1-151</li>
+                            <sub class='generationSub'> <span class='grass'>Bulbasaur</span>, <span class='fire'>Charmander</span>, <span class='water'>Squirtle</span></sub>
+                            <li class='generationLi'>Generation 2: #152-251</li>
+                            <sub class='generationSub'> <span class='grass'>Chikorita</span>, <span class='fire'>Cyndaquil</span>, <span class='water'>Totodile</span></sub>
+                            <li class='generationLi'>Generation 3: #252-386</li>
+                            <sub class='generationSub'> <span class='grass'>Treecko</span>, <span class='fire'>Torchic</span>, <span class='water'>Mudkip</span></sub>
+                            <li class='generationLi'>Generation 4: #387-493</li>
+                            <sub class='generationSub'> <span class='grass'>Turtwig</span>, <span class='fire'>Chimchar</span>, <span class='water'>Piplup</span></sub>
+                            <li class='generationLi'>Generation 5: #494-649</li>
+                            <sub class='generationSub'> <span class='grass'>Snivy</span>, <span class='fire'>Tepig</span>, <span class='water'>Oshawott</span></sub>
+                            <li class='generationLi'>Generation 6: #650-721</li>
+                            <sub class='generationSub'> <span class='grass'>Chespin</span>, <span class='fire'>Fennekin</span>, <span class='water'>Froakie</span></sub>
+                            <li class='generationLi'>Generation 7: #722-809</li>
+                            <sub class='generationSub'> <span class='grass'>Rowlet</span>, <span class='fire'>Litten</span>, <span class='water'>Popplio</span></sub>
+                            <li class='generationLi'>Generation 8: #810-?</li>
+                            <sub class='generationSub'> <span class='grass'>Grookey</span>, <span class='fire'>Scorbunny</span>, <span class='water'>Sobble</span></sub>
                         </ul>
-                        *Each generation allows you to start with either a <span class='grass'>grass</span>, <span class='fire'>fire</span>, or <span class='water'>water</span> type Pokémon. 
+                        *Each generation allows you to start with either a <span id='genType' class='grass'>grass</span>, <span id='genType' class='fire'>fire</span>, or <span id='genType' class='water'>water</span> type Pokémon. 
                         The exceptions being Yellow where you start with Pikachu and Let's Go, Pikachu/Eevee 
                         where you start with the titular Pokémon.
                     </p>

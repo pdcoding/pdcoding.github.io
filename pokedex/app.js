@@ -4,6 +4,13 @@ $(() => {
   const handleData = data => {
     // console.log(data.game_indices[0].game_index);
 
+    //Sprite
+    const $sprite = $('<img>');
+    $sprite.attr('src', data.sprites.front_default);
+    $('.results').append($sprite);
+    $sprite.addClass('sprite');
+    $sprite.attr('id', 'sprite');
+
     //Poké#
     const $pokeNum = $('<h2>').text('Pokémon #' + data.id);
     $('.results').append($pokeNum);
@@ -31,13 +38,6 @@ $(() => {
     const $height = $('<h2>').text('Height: ' + data.height + ' decimeters');
     $('.results').append($height);
     $height.addClass('height');
-
-    //Sprite
-    const $sprite = $('<img>');
-    $sprite.attr('src', data.sprites.front_default);
-    $('.results').append($sprite);
-    $sprite.addClass('sprite');
-    $sprite.attr('id', 'sprite');
   };
 
   $('form').on('submit', event => {

@@ -1,10 +1,47 @@
+@media only screen and (min-width: 500px) {
+  .results {
+    margin: auto;
+    width: 50%;
+  }
+}
+
 body {
   background-color: #b4dced;
+  background-image: url('https://i.imgur.com/8N4jTu8.png');
+  background-size: cover;
 }
 
 header {
   background-color: #f21616;
   font-family: 'Press Start 2P', sans-serif;
+  background-image: linear-gradient(to right, #fb0101cc, #000201cc);
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.formDiv {
+  background: ;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  background-image: linear-gradient(to right, #00c9f9cc, #fb0101cc);
+}
+
+.modalBar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, #fb0101cc, #00c9f9cc);
+}
+
+.modalButton {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5x;
+  margin-right: 5px;
 }
 
 .characterName {
@@ -70,71 +107,147 @@ header {
 
 .grass {
   color: #73bf26;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .fire {
   color: #f27405;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .water {
   color: #3b8dbf;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .normal {
   color: #8c8a70;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .electric {
   color: #f2e205;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .psychic {
   color: #ff4884;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .fighting {
   color: #a50300;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .flying {
   color: #8c7abf;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .poison {
   color: #6649a6;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 .ground {
   color: #f2d338;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .rock {
   color: #a67c49;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .bug {
   color: #5a7302;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .ghost {
   color: #591e55;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .ice {
   color: #82c0d9;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .dragon {
   color: #6e1bbd;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .steel {
   color: #afb4b7;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .dark {
   color: #523c1d;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .fairy {
   color: #e7b8e4;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.typeList {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.generationSub {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.generationLi {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#genType {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.results {
+  float: left;
+  clear: right;
+  background-color: #8bac0fcc;
+  margin: 15% auto;
+  border-radius: 6px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+#sprite {
+  float: right;
+  clear: left;
 }
