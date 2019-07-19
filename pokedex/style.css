@@ -4,6 +4,7 @@ body {
 
 header {
   background-color: #f21616;
+  font-family: 'Press Start 2P', sans-serif;
 }
 
 .characterName {
@@ -38,15 +39,18 @@ header {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
 }
 
 /* Modal content */
 .content {
-  background-color: #fefefe;
+  background-color: #8bac0f;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  border-radius: 6px;
+  font-family: 'Press Start 2P', sans-serif;
 }
 
 /* Close button */
@@ -62,4 +66,75 @@ header {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.grass {
+  color: #73bf26;
+}
+
+.fire {
+  color: #f27405;
+}
+
+.water {
+  color: #3b8dbf;
+}
+
+.normal {
+  color: #8c8a70;
+}
+
+.electric {
+  color: #f2e205;
+}
+
+.psychic {
+  color: #ff4884;
+}
+
+.fighting {
+  color: #a50300;
+}
+
+.flying {
+  color: #8c7abf;
+}
+
+.poison {
+  color: #6649a6;
+}
+.ground {
+  color: #f2d338;
+}
+
+.rock {
+  color: #a67c49;
+}
+
+.bug {
+  color: #5a7302;
+}
+
+.ghost {
+  color: #591e55;
+}
+
+.ice {
+  color: #82c0d9;
+}
+
+.dragon {
+  color: #6e1bbd;
+}
+
+.steel {
+  color: #afb4b7;
+}
+
+.dark {
+  color: #523c1d;
+}
+
+.fairy {
+  color: #e7b8e4;
 }
