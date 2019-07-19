@@ -88,6 +88,60 @@ $(() => {
       gamesModal.css('display', 'none');
     }
   });
+
+  const regionModal = $('#regionModal');
+  const regionBtn = $('#regionBtn');
+  const regionSpan = $('.regionClose');
+
+  regionBtn.on('click', event => {
+    regionModal.css('display', 'block');
+  });
+
+  regionSpan.on('click', event => {
+    regionModal.css('display', 'none');
+  });
+
+  $('window').on('click', event => {
+    if (event.target == modal) {
+      regionModal.css('display', 'none');
+    }
+  });
+
+  const typesModal = $('#typesModal');
+  const typesBtn = $('#typesBtn');
+  const typesSpan = $('.typesClose');
+
+  typesBtn.on('click', event => {
+    typesModal.css('display', 'block');
+  });
+
+  typesSpan.on('click', event => {
+    typesModal.css('display', 'none');
+  });
+
+  $('window').on('click', event => {
+    if (event.target == modal) {
+      typesModal.css('display', 'none');
+    }
+  });
+
+  const genModal = $('#genModal');
+  const genBtn = $('#genBtn');
+  const genSpan = $('.genClose');
+
+  genBtn.on('click', event => {
+    genModal.css('display', 'block');
+  });
+
+  genSpan.on('click', event => {
+    genModal.css('display', 'none');
+  });
+
+  $('window').on('click', event => {
+    if (event.target == modal) {
+      genModal.css('display', 'none');
+    }
+  });
 });
 
 //name -> name

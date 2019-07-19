@@ -29,6 +29,9 @@
       <div class="modalBar">
         <button id="historyBtn">History</button>
         <button id="gamesBtn">Games</button>
+        <button id='regionBtn'>Regions</button>
+        <button id='typesBtn'>Types</button>
+        <button id='genBtn'>Generations</button>
         <!-- <div class="modal">Types</div>
         <div class="modal">Games</div>
         <div class="modal">Regions</div>
@@ -53,9 +56,11 @@
             the trading card game was developed and released in October of the
             same year. The continuing popularity of the games led to the release
             in North America with Red and Blue in 1998 along with dozens of
-            anime, manga, film, and games since the series' original inception.
-            With the debut of the film Detective Pikachu this past spring and a
-            new game scheduled for release this fall (Sword and Shield), Pokémon
+            anime, manga, film, and games since the series' original inception. 
+            Overall, more than 300 million Pokémon games have been sold, making 
+            it the second best-selling video game franchise behind Nintendo's own Mario 
+            franchise. With the debut of the film Detective Pikachu this past spring 
+            and a new game scheduled for release this fall (Sword and Shield), Pokémon
             shows no sign of slowing down.
           </p>
         </div>
@@ -90,12 +95,109 @@
                         <li>Pokémon Ultra Sun and Ultra Moon (2017, Worldwide)</li>
                         <li>Pokémon Let's Go, Pikachu! and Let's Go, Eevee! (2018, Worldwide)</li>
                     </ul>
-                    *This list does not include dozens of other side games released.
+                    *There are a more than 80 Pokémon games in total.
                 </p>
             </div>
         </div>
+
+        <!-- Regions -->
+        <div id="regionModal" class="modal">
+
+                <!-- Region Content -->
+                <div class="content" id="regionContent">
+                    <span class='regionClose'>&times;</span>
+                    <p>There have been eight regions featured throughout the main series of Pokémon games. 
+                        In order they are:
+                        <ul>
+                            <li>Kanto</li>
+                            <li>Johto</li>
+                            <li>Hoenn</li>
+                            <li>Sinnoh</li>
+                            <li>Unova</li>
+                            <li>Kalos</li>
+                            <li>Alola</li>
+                            <li>Galar (upcoming in Pokémon Sword and Shield)</li>
+                        </ul>
+                        *Each region was the setting for at least two games.
+                    </p>
+                </div>
+            </div>
+
+        <!-- Types -->
+        <div id="typesModal" class="modal">
+
+                <!-- Types Content -->
+                <div class="content" id="typesContent">
+                    <span class='typesClose'>&times;</span>
+                    <p>There are currently 18 different types of Pokémon. Because Pokémon can have multiple
+                        types there are a potential 324 possible combination, but as of now only 146 combinations 
+                        have been used. These are the 18 types with examples of each:
+                        <ul>
+                            <li>Normal: Kangaskhan</li>
+                            <li>Fire: Magmar</li>
+                            <li>Water: Seadra</li>
+                            <li>Grass: Tangela</li>
+                            <li>Electric: Electabuzz</li>
+                            <li>Psychic: Hypno</li>
+                            <li>Fighting: Hitmonchan</li>
+                            <li>Flying*: Tornadus</li>
+                            <li>Poison: Muk</li>
+                            <li>Ground: Cubone</li>
+                            <li>Rock*: Roggenrola</li>
+                            <li>Bug: Pinsir</li>
+                            <li>Ghost*: Duskull</li>
+                            <li>Ice*: Vanilluxe</li>
+                            <li>Dragon: Dratini</li>
+                            <li>Steel*: Klinklang</li>
+                            <li>Dark*: Mightyena</li>
+                            <li>Fairy: Clefairy</li>
+                        </ul>
+                        *These are types that had no Pokémon purely of that type until later in the series. <br>
+                        ** There is technically another type that is referred to as '???.' Although this is frequently
+                        used as a placeholder until the Pokémon's true type is revealed.
+                    </p>
+                </div>
+            </div>
+
+        <!-- Generations -->
+        <div id="genModal" class="modal">
+
+                <!-- Generations Content -->
+                <div class="content" id="genContent">
+                    <span class='genClose'>&times;</span>
+                    <p>As one would expect, each generation of Pokémon adds new creatures as the world gets 
+                        expanded. Here are the Pokémon #'s included in each generation and the starter Pokémon 
+                        for each as well:
+                        <ul>
+                            <li>Generation 1: #1-151</li>
+                            <sub>Bulbasaur, Charmander, Squirtle</sub>
+                            <li>Generation 2: #152-251</li>
+                            <sub>Chikorita, Cyndaquil, Totodile</sub>
+                            <li>Generation 3: #252-386</li>
+                            <sub>Treecko, Torchic, Mudkip</sub>
+                            <li>Generation 4: #387-493</li>
+                            <sub>Turtwig, Chimchar, Piplup</sub>
+                            <li>Generation 5: #494-649</li>
+                            <sub>Snivy, Tepig, Oshawott</sub>
+                            <li>Generation 6: #650-721</li>
+                            <sub>Chespin, Fennekin, Froakie</sub>
+                            <li>Generation 7: #722-809</li>
+                            <sub>Rowlet, Litten, Popplio</sub>
+                            <li>Generation 8: #810-?</li>
+                            <sub>Grookey, Scorbunny, Sobble</sub>
+                        </ul>
+                        *Each generation allows you to start with either a grass, fire, or water type Pokémon. 
+                        The exceptions being Yellow where you start with Pikachu and Let's Go, Pikachu/Eevee 
+                        where you start with the titular Pokémon.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        
       <div class="results"></div>
-    </div>
 
     <div></div>
   </body>
