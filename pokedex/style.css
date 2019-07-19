@@ -257,3 +257,12 @@ header {
 .sprite {
   width: 35%;
 }
+
+.modalButton:hover {
+  background-color: #e8ad0c;
+  /* color: lime; */
+}
+
+.submitButton:hover {
+  background-color: #e8ad0c;
+}
