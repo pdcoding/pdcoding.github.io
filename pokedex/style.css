@@ -240,7 +240,6 @@ header {
 }
 
 .results {
-  /* float: left; */
   clear: right;
   background-color: #8bac0fcc;
   margin: 15% auto;
@@ -260,9 +259,12 @@ header {
 
 .modalButton:hover {
   background-color: #e8ad0c;
-  /* color: lime; */
 }
 
 .submitButton:hover {
   background-color: #e8ad0c;
+}
+
+button {
+  font-family: 'Press Start 2P', sans-serif;
 }

@@ -2,8 +2,6 @@ console.log("Gotta catch 'em all!");
 
 $(() => {
   const handleData = data => {
-    // console.log(data.game_indices[0].game_index);
-
     //Sprite
     const $sprite = $('<img>');
     $sprite.attr('src', data.sprites.front_default);
