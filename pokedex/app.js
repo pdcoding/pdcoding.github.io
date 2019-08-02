@@ -1,4 +1,4 @@
-console.log("Gotta catch 'em all!");
+// console.log("Gotta catch 'em all!");
 
 $(() => {
   const handleData = data => {
